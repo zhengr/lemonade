@@ -47,9 +47,9 @@
   },
   "llamacpp": {
     "vulkan": "b9747",
-    "rocm-stable": "b9752",
+    "rocm-stable": "b10073",
     "rocm-nightly": "b1292",
-    "cuda": "b9851",
+    "cuda": "b10073",
     "metal": "b9747",
     "cpu": "b9747"
   },
@@ -68,7 +68,7 @@
     "metal": "master-721-8caa3f9"
   },
   "therock": {
-    "version": "7.13.0",
+    "version": "7.14.0",
     "architectures": [
       "gfx908",
       "gfx90a",
