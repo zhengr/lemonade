@@ -628,7 +628,7 @@ python examples/realtime_transcription.py --model Whisper-Tiny
 ## `POST /v1/images/generations`
 <sub>![Status](https://img.shields.io/badge/status-fully_available-green)</sub>
 
-Image Generation API. You provide a text prompt and receive a generated image. This API uses [stable-diffusion.cpp](https://github.com/leejet/stable-diffusion.cpp) as the backend.
+Image Generation API. You provide a text prompt and receive a generated image. This API uses [stable-diffusion.cpp](https://github.com/lemonade-sdk/stable-diffusion.cpp) as the backend.
 
 > **Note:** Image generation uses Stable Diffusion models. Available models include `SD-Turbo` (fast, ~4 steps), `SDXL-Turbo`, `SD-1.5`, and `SDXL-Base-1.0`.
 >
@@ -666,7 +666,7 @@ Image Generation API. You provide a text prompt and receive a generated image. T
 ## `POST /v1/images/edits`
 <sub>![Status](https://img.shields.io/badge/status-fully_available-green)</sub>
 
-Image Editing API. You provide a source image and a text prompt describing the desired change, and receive an edited image. This API uses [stable-diffusion.cpp](https://github.com/leejet/stable-diffusion.cpp) as the backend.
+Image Editing API. You provide a source image and a text prompt describing the desired change, and receive an edited image. This API uses [stable-diffusion.cpp](https://github.com/lemonade-sdk/stable-diffusion.cpp) as the backend.
 
 > **Note:** This endpoint accepts `multipart/form-data` requests (not JSON). Use editing-capable models such as `Flux-2-Klein-4B` or `SD-Turbo`.
 >
@@ -728,7 +728,7 @@ Image Editing API. You provide a source image and a text prompt describing the d
 ## `POST /v1/images/variations`
 <sub>![Status](https://img.shields.io/badge/status-fully_available-green)</sub>
 
-Image Variations API. You provide a source image and receive a variation of it. This API uses [stable-diffusion.cpp](https://github.com/leejet/stable-diffusion.cpp) as the backend.
+Image Variations API. You provide a source image and receive a variation of it. This API uses [stable-diffusion.cpp](https://github.com/lemonade-sdk/stable-diffusion.cpp) as the backend.
 
 > **Note:** This endpoint accepts `multipart/form-data` requests (not JSON). Unlike `/images/edits`, a `prompt` parameter is not supported and will be ignored — the model generates a variation based solely on the input image.
 >
@@ -780,7 +780,7 @@ Image Variations API. You provide a source image and receive a variation of it. 
 ## `POST /v1/images/upscale`
 <sub>![Status](https://img.shields.io/badge/status-fully_available-green)</sub>
 
-Image Upscaling API. You provide a base64-encoded image and a Real-ESRGAN model name, and receive a 4x upscaled image. This API uses the `sd-cli` binary from [stable-diffusion.cpp](https://github.com/leejet/stable-diffusion.cpp) to perform super-resolution.
+Image Upscaling API. You provide a base64-encoded image and a Real-ESRGAN model name, and receive a 4x upscaled image. This API uses the `sd-cli` binary from [stable-diffusion.cpp](https://github.com/lemonade-sdk/stable-diffusion.cpp) to perform super-resolution.
 
 > **Note:** Available upscale models are `RealESRGAN-x4plus` (general-purpose, 64 MB) and `RealESRGAN-x4plus-anime` (optimized for anime-style art, 17 MB). Both produce a 4x resolution increase (e.g., 256x256 → 1024x1024).
 >

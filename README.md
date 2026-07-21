@@ -501,7 +501,7 @@ This project is:
 - Standing on the shoulders of great tools from:
   - [ggml/llama.cpp](https://github.com/ggml-org/llama.cpp)
   - [ggml/whisper.cpp](https://github.com/ggerganov/whisper.cpp)
-  - [ggml/stable-diffusion.cpp](https://github.com/leejet/stable-diffusion.cpp)
+  - [ggml/stable-diffusion.cpp](https://github.com/lemonade-sdk/stable-diffusion.cpp)
   - [kokoros](https://github.com/lucasjinreal/Kokoros)
   - [OnnxRuntime GenAI](https://github.com/microsoft/onnxruntime-genai)
   - [Hugging Face Hub](https://github.com/huggingface/huggingface_hub)

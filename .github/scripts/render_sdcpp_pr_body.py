@@ -207,7 +207,7 @@ def render_body(
     lines = [
         "This updates Lemonade's existing `sd-cpp` backend pins using the appropriate release stream for each backend.",
         "",
-        f"- Base sd-cpp release (`leejet/stable-diffusion.cpp`): `{args.base_release}`",
+        f"- sd-cpp release (`lemonade-sdk/stable-diffusion.cpp`): `{args.base_release}`",
         f"- CUDA sd-cpp release (`lemonade-sdk/stable-diffusion.cpp`): `{args.cuda_release}`",
         f"- Updated base pins: `{', '.join(base_backends)}` -> `{args.base_release}`",
         f"- Updated CUDA pins: `{', '.join(cuda_backends)}` -> `{args.cuda_release}`",
