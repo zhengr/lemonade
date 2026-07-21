@@ -4,11 +4,11 @@ on:
   workflow_dispatch:
     inputs:
       release:
-        description: "Optional upstream leejet tag, e.g. master-714-db48014. Empty = latest."
+        description: "Optional lemonade-sdk tag, e.g. master-785-506bb58. Empty = latest."
         required: false
         type: string
       cuda_release:
-        description: "Optional lemonade-sdk CUDA tag, e.g. master-714-db48014. Empty = latest CUDA release."
+        description: "Optional lemonade-sdk CUDA tag, e.g. master-785-506bb58. Empty = latest CUDA release."
         required: false
         type: string
   pull_request:
@@ -35,10 +35,9 @@ env:
   LEMONADE_CI_MODE: "True"
   PYTHONIOENCODING: utf-8
   HF_TOKEN: ${{ secrets.HUGGINGFACE_ACCESS_TOKEN }}
-  SDCPP_REPO: leejet/stable-diffusion.cpp
+  SDCPP_REPO: lemonade-sdk/stable-diffusion.cpp
   SDCPP_CUDA_REPO: lemonade-sdk/stable-diffusion.cpp
-  # Non-CUDA assets are published by leejet. CUDA assets are published by the
-  # lemonade-sdk fork and may intentionally be on a different release tag.
+  # All assets are published by lemonade-sdk/stable-diffusion.cpp.
   SDCPP_BASE_UPDATE_BACKENDS: cpu,vulkan,rocm-stable,metal
   SDCPP_CUDA_UPDATE_BACKENDS: cuda
   SDCPP_VALIDATED_LABELS: cpu,vulkan,rocm-stable
